@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+    <style id="style">#div1 {
+            width: 200px;
+            height: 200px;
+            border: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 50%);
+            animation: move 1s linear infinite;
+            position: fixed;
+            top: 20%;
+        }
+
+        #div1::after,
+        #div1::before {
+            border-radius: 50%;
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+
+        #div1::after {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgb(255, 255, 255);
+            background: radial-gradient(circle, rgba(255, 255, 255, 1) 15%, rgba(0, 0, 0, 1) 15%);
+        }
+
+        #div1::before {
+
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgb(0, 0, 0);
+            background: radial-gradient(circle, rgba(0, 0, 0, 1) 15%, rgba(255, 255, 255, 1) 15%);
+        }
+
+        @keyframes move {
+            0% {
+                transform: rotateZ(0);
+            }
+
+            50% {
+                transform: rotateZ(180deg);
+
+            }
+
+            100% {
+                transform: rotateZ(360);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #div1 {
+                right: 10px;
+                transform: translateX(0);
+            }
+        }</style>
+<script src="/style.e308ff8e.js"></script></head>
+
+<body>
+    <div id="html"></div>
+    <div id="div1"></div>
+    <script src="/main.1f19ae8e.js"></script>
+
+</body>
+
+</html>

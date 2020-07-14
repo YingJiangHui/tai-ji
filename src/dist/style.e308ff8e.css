@@ -1,0 +1,14 @@
+*{
+    margin: 0;padding: 0;
+}
+*::before{
+    margin: 0;padding: 0;
+}
+*::after{
+    margin: 0;padding: 0;
+}
+#html{
+    word-break: break-all;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
